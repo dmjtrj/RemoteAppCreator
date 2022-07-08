@@ -67,6 +67,7 @@ namespace WindowsFormsApp1
 
         // Переменная varForEditString необходима для того, чтобы имя сотрудника выводилось с большой буквы, независимо от ввода
         // эта запись - проба пера в git'е
+        // test
         private string CorrectSurname(string surname)
         {
             var varForEditString = new CultureInfo("en-US", false).TextInfo.ToTitleCase(surname.ToLower());
