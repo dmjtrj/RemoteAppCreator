@@ -79,7 +79,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(132, 376);
+            this.progressBar1.Location = new System.Drawing.Point(132, 383);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
             this.progressBar1.TabIndex = 3;
@@ -222,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 411);
+            this.ClientSize = new System.Drawing.Size(358, 418);
             this.Controls.Add(this.RALabel_button);
             this.Controls.Add(this.RALabel_label);
             this.Controls.Add(this.RALabel_textbox);
