@@ -49,11 +49,14 @@
             this.RALabel_label = new System.Windows.Forms.Label();
             this.RALabel_button = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.consName_textBox = new System.Windows.Forms.TextBox();
+            this.name_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // programName_textbox
             // 
             this.programName_textbox.Location = new System.Drawing.Point(54, 36);
+            this.programName_textbox.MaxLength = 30;
             this.programName_textbox.Name = "programName_textbox";
             this.programName_textbox.Size = new System.Drawing.Size(196, 20);
             this.programName_textbox.TabIndex = 0;
@@ -128,9 +131,11 @@
             // ip1_text
             // 
             this.ip1_text.Location = new System.Drawing.Point(54, 146);
+            this.ip1_text.MaxLength = 3;
             this.ip1_text.Name = "ip1_text";
             this.ip1_text.Size = new System.Drawing.Size(35, 20);
             this.ip1_text.TabIndex = 7;
+            this.ip1_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -153,9 +158,11 @@
             // ip2_text
             // 
             this.ip2_text.Location = new System.Drawing.Point(111, 146);
+            this.ip2_text.MaxLength = 3;
             this.ip2_text.Name = "ip2_text";
             this.ip2_text.Size = new System.Drawing.Size(35, 20);
             this.ip2_text.TabIndex = 11;
+            this.ip2_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -169,16 +176,20 @@
             // ip3_text
             // 
             this.ip3_text.Location = new System.Drawing.Point(168, 146);
+            this.ip3_text.MaxLength = 3;
             this.ip3_text.Name = "ip3_text";
             this.ip3_text.Size = new System.Drawing.Size(35, 20);
             this.ip3_text.TabIndex = 13;
+            this.ip3_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ip4_text
             // 
             this.ip4_text.Location = new System.Drawing.Point(225, 146);
+            this.ip4_text.MaxLength = 3;
             this.ip4_text.Name = "ip4_text";
             this.ip4_text.Size = new System.Drawing.Size(35, 20);
             this.ip4_text.TabIndex = 15;
+            this.ip4_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // isConsultant
             // 
@@ -218,11 +229,30 @@
             this.RALabel_button.UseVisualStyleBackColor = true;
             this.RALabel_button.Click += new System.EventHandler(this.RALabel_button_Click);
             // 
+            // consName_textBox
+            // 
+            this.consName_textBox.Location = new System.Drawing.Point(98, 283);
+            this.consName_textBox.MaxLength = 30;
+            this.consName_textBox.Name = "consName_textBox";
+            this.consName_textBox.Size = new System.Drawing.Size(134, 20);
+            this.consName_textBox.TabIndex = 23;
+            // 
+            // name_Label
+            // 
+            this.name_Label.AutoSize = true;
+            this.name_Label.Location = new System.Drawing.Point(116, 267);
+            this.name_Label.Name = "name_Label";
+            this.name_Label.Size = new System.Drawing.Size(90, 13);
+            this.name_Label.TabIndex = 24;
+            this.name_Label.Text = "Имя сотрудника";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 418);
+            this.Controls.Add(this.name_Label);
+            this.Controls.Add(this.consName_textBox);
             this.Controls.Add(this.RALabel_button);
             this.Controls.Add(this.RALabel_label);
             this.Controls.Add(this.RALabel_textbox);
@@ -273,6 +303,8 @@
         private System.Windows.Forms.Label RALabel_label;
         private System.Windows.Forms.Button RALabel_button;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.TextBox consName_textBox;
+        private System.Windows.Forms.Label name_Label;
     }
 }
 

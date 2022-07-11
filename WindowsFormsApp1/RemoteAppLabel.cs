@@ -15,10 +15,8 @@ namespace WindowsFormsApp1
         public string programFolder { get; set; } // необходим путь программы относительно системы на которой она установлена
         public string labelFolder { get; set; }
         public string ipAddress { get; set; }
-        public string batFileFolder { get; set; }
 
         // Переменная varForEditString необходима для того, чтобы имя сотрудника выводилось с большой буквы, независимо от ввода
-        // 1
 
         public string CreateCorrectProgramName(string programName)
         {
