@@ -136,6 +136,7 @@
             this.ip1_text.Size = new System.Drawing.Size(35, 20);
             this.ip1_text.TabIndex = 7;
             this.ip1_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ip1_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ip1_text_KeyPress);
             // 
             // label4
             // 
@@ -163,6 +164,7 @@
             this.ip2_text.Size = new System.Drawing.Size(35, 20);
             this.ip2_text.TabIndex = 11;
             this.ip2_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ip2_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ip2_text_KeyPress);
             // 
             // label6
             // 
@@ -181,6 +183,7 @@
             this.ip3_text.Size = new System.Drawing.Size(35, 20);
             this.ip3_text.TabIndex = 13;
             this.ip3_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ip3_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ip3_text_KeyPress);
             // 
             // ip4_text
             // 
@@ -190,6 +193,7 @@
             this.ip4_text.Size = new System.Drawing.Size(35, 20);
             this.ip4_text.TabIndex = 15;
             this.ip4_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ip4_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ip4_text_KeyPress);
             // 
             // isConsultant
             // 

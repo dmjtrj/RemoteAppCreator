@@ -142,5 +142,29 @@ namespace RemoteAppLabel
                 fileLocation_textbox.Enabled = true;
             }
         }
+
+        private void ip1_text_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void ip2_text_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) && e.KeyChar == 8)
+                e.Handled = true;
+        }
+
+        private void ip3_text_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void ip4_text_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+                e.Handled = true;
+        }
     }
 }
