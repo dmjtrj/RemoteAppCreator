@@ -276,6 +276,7 @@
             this.Controls.Add(this.programName_label);
             this.Controls.Add(this.createRA_button);
             this.Controls.Add(this.programName_textbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
