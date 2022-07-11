@@ -6,7 +6,7 @@ using System.Security.Principal;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace RemoteAppLabel
 {
     internal static class Program
     {
