@@ -24,10 +24,9 @@ namespace RemoteAppLabel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            progressBar1.Visible = true;
             var RA_Label = new RemoteAppLabel();
             string correctProgramName;
-            if (isConsultant.Checked == true)
+            if (isConsultant.Checked)
             {
                 correctProgramName = RA_Label.CreateCorrectProgramName(consName_textBox.Text);
                 RemoteAppLabel.CreateFolderForBatfile(correctProgramName);
@@ -47,8 +46,8 @@ namespace RemoteAppLabel
             }
             try
             {
-                RA_Label.CreateRegistryKey(correctProgramName, RA_Label.ipAddress, RA_Label.programFolder);
-                RA_Label.CreateRDPLabel(correctProgramName, RA_Label.labelFolder);
+                RA_Label.CreateRegistryKey(RA_Label.programName, RA_Label.ipAddress, RA_Label.programFolder);
+                RA_Label.CreateRDPLabel(RA_Label.programName, RA_Label.labelFolder);
             }
             catch (Exception ex)
             {
@@ -56,54 +55,9 @@ namespace RemoteAppLabel
             }
         }
 
-        // Переменная varForEditString необходима для того, чтобы имя сотрудника выводилось с большой буквы, независимо от ввода
-
-        //private string CorrectSurname(string surname)
-        //{
-        //    var varForEditString = new CultureInfo("en-US", false).TextInfo.ToTitleCase(surname.ToLower());
-        //    return varForEditString;
-        //}
-
-        //private void CreateRegistryKey(string correctSurname)
-        //{
-        //    RegistryKey accessKey = RegistryKey.OpenRemoteBaseKey(RegistryHive.LocalMachine, "10.0.29.18", RegistryView.Registry64);
-        //    RegistryKey openDirectory = accessKey.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Terminal Server\TSAppAllowList\Applications", true);
-        //    if (openDirectory is null)
-        //    {
-        //        openDirectory = accessKey.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Terminal Server\TSAppAllowList", true);
-        //        openDirectory = openDirectory.CreateSubKey("Applications");
-        //    }
-        //    var path = @"C:\sps\Consultant\Links\" + correctSurname + "\\Consultant" + correctSurname + ".bat";
-        //    RegistryKey surnameFolder = openDirectory.CreateSubKey("Consultant" + correctSurname);
-        //    surnameFolder.SetValue("Name", "Consultant" + correctSurname);
-        //    surnameFolder.SetValue("Path", path);
-        //}
-
-        //private void CreateFolderForBatfile(string correctSurname)
-        //{
-        //    Directory.CreateDirectory(@"\\10.0.29.18\sps\Consultant\Links\" + correctSurname);
-        //}
-
-        //private void CreateBatFile(string correctSurname)
-        //{
-        //    var batFileText = "start \\\\10.0.29.18\\sps\\Consultant\\cons.exe\r\nexit";
-        //    File.WriteAllText(@"\\10.0.29.18\sps\Consultant\Links\" + correctSurname + @"\Consultant" + correctSurname + ".bat", batFileText.ToString());
-        //}
-
-        //private void CreateRDPLabel(string correctSurname)
-        //{
-        //    var currentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-        //    var arrayOfLinesLabelContents = File.ReadAllLines(currentDirectory + @"\files\textForRDPLabel.txt");
-        //    for (var i = 21; i < 23; i++)
-        //    {
-        //        arrayOfLinesLabelContents[i] = arrayOfLinesLabelContents[i].Replace("***", "Consultant" + correctSurname);
-        //    }
-        //    File.WriteAllLines($@"\\10.0.29.18\sps\Consultant\Links\Ярлыки\Консультант Плюс ({correctSurname}).rdp", arrayOfLinesLabelContents);
-        //}
-
         private void isConsultant_CheckedChanged(object sender, EventArgs e)
         {
-            if (isConsultant.Checked == true)
+            if (isConsultant.Checked)
                 switchEnabledTextBoxes(true, false);
             else
             {

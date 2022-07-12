@@ -31,7 +31,6 @@
             this.programName_textbox = new System.Windows.Forms.TextBox();
             this.createRA_button = new System.Windows.Forms.Button();
             this.programName_label = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.fileLocation_button = new System.Windows.Forms.Button();
             this.fileLocation_textbox = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -79,14 +78,6 @@
             this.programName_label.Size = new System.Drawing.Size(91, 13);
             this.programName_label.TabIndex = 2;
             this.programName_label.Text = "Имя программы";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(132, 383);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.TabIndex = 3;
-            this.progressBar1.Visible = false;
             // 
             // fileLocation_button
             // 
@@ -254,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 418);
+            this.ClientSize = new System.Drawing.Size(358, 390);
             this.Controls.Add(this.name_Label);
             this.Controls.Add(this.consName_textBox);
             this.Controls.Add(this.RALabel_button);
@@ -272,7 +263,6 @@
             this.Controls.Add(this.fileLocation_label);
             this.Controls.Add(this.fileLocation_textbox);
             this.Controls.Add(this.fileLocation_button);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.programName_label);
             this.Controls.Add(this.createRA_button);
             this.Controls.Add(this.programName_textbox);
@@ -290,7 +280,6 @@
         private System.Windows.Forms.TextBox programName_textbox;
         private System.Windows.Forms.Button createRA_button;
         private System.Windows.Forms.Label programName_label;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button fileLocation_button;
         private System.Windows.Forms.TextBox fileLocation_textbox;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
