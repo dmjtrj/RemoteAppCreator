@@ -22,7 +22,7 @@ full address:s:10.0.29.18
 alternate shell:s:||***
 remoteapplicationprogram:s:||***
 gatewayhostname:s:
-remoteapplicationname:s:LabelName
+remoteapplicationname:s:***
 remoteapplicationcmdline:s:
 screen mode id:i:2
 winposstr:s:0,3,0,0,800,600
