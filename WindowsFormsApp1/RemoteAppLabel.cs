@@ -47,8 +47,8 @@ namespace RemoteAppLabel
 
         public void CreateRDPLabel(string correctProgramName, string labelFolder)
         {
-            var currentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-            var arrayOfLinesLabelContents = File.ReadAllLines(currentDirectory + @"\files\textForRDPLabel.txt");
+            //var currentDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            var arrayOfLinesLabelContents = File.ReadAllLines(@"../../files/textForRDPLabel.txt");
             for (var i = 21; i < 23; i++)
             {
                 arrayOfLinesLabelContents[i] = arrayOfLinesLabelContents[i].Replace("***", correctProgramName);
